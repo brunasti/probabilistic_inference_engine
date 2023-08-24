@@ -1,5 +1,38 @@
 # Probabilistic Inference Engine Implementation
 
+## Description
+
+## Example
+
+Let's try to predict if today it will rain (typical dutch problem...).
+
+### Facts
+
+- SunShine : 0.25
+
+There is just a little of sunshine
+
+### Rules
+
+- RULE_1 : Clouds = ! SunShine
+
+The clouds are as much as not the sunshine (the clouds are the opposite of sunshine)
+
+- RULE_2 : Rain = Clouds - 0.15
+
+The chances of rain depend on how many clouds there are, just a little less.
+
+
+
+### Execution
+
+- Rule RULE_1 ? Clouds = ! SunShine => 
+Clouds = 0.75
+
+- Rule RULE_2 ? Rain = Clouds - 0.15 =>
+Rain = 0.6
+
+Result : **Rain = 0.6**
 
 ## Concepts
 
