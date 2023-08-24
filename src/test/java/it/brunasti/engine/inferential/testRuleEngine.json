@@ -1,0 +1,67 @@
+{
+  "rulesBase" : {
+    "rules" : {
+      "RULE_2" : {
+        "name" : "RULE_2",
+        "description" : "",
+        "fact" : {
+          "name" : "C",
+          "description" : "Fact C defined in rule RULE_2",
+          "value" : 0.0
+        },
+        "formula" : {
+          "name" : "FORMULA_3",
+          "description" : "Formula [C=( A + B ) * 0.5] defined in rule RULE_2",
+          "body" : "( A + B ) * 0.5"
+        }
+      },
+      "Rule1" : {
+        "name" : "Rule1",
+        "description" : "Prova di rule",
+        "fact" : {
+          "name" : "A",
+          "description" : "Fact A defined in rule Rule1",
+          "value" : 0.0
+        },
+        "formula" : {
+          "name" : "FORMULA_1",
+          "description" : "Formula [A=B] defined in rule Rule1",
+          "body" : "B"
+        }
+      },
+      "RULE_4" : {
+        "name" : "RULE_4",
+        "description" : "",
+        "fact" : {
+          "name" : "B",
+          "description" : "Fact B defined in rule RULE_4",
+          "value" : 0.0
+        },
+        "formula" : {
+          "name" : "FORMULA_5",
+          "description" : "Formula [B=0.5] defined in rule RULE_4",
+          "body" : "0.5"
+        }
+      }
+    }
+  },
+  "factsBase" : {
+    "facts" : {
+      "A" : {
+        "name" : "A",
+        "description" : "Fact A defined in rule Rule1",
+        "value" : 0.0
+      },
+      "B" : {
+        "name" : "B",
+        "description" : "Fact B defined in rule RULE_4",
+        "value" : 0.0
+      },
+      "C" : {
+        "name" : "C",
+        "description" : "Fact C defined in rule RULE_2",
+        "value" : 0.0
+      }
+    }
+  }
+}

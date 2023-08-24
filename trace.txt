@@ -1,0 +1,35 @@
+Execution Trace : Rain
+----------------------------------
+
+Facts : 
+  Rain : -1.0
+  Clouds : -1.0
+  SunShine : 0.25
+
+Rules : 
+  RULE_1 : Clouds = ! SunShine
+  RULE_2 : Rain = Clouds - 0.15
+
+----------------------------------
+Query : Rain
+
+ - Start : 2023-08-24 17:00:14.255
+----------------------------------
+Rule RULE_1 ? Clouds = ! SunShine
+  -> pop : SunShine
+  ---> : 0.25
+   Clouds <- 0.75
+
+Rule RULE_2 ? Rain = Clouds - 0.15
+  -> pop : Clouds
+  ---> : 0.75
+   Rain <- 0.6
+
+----------------------------------
+Result : 
+   Rain (Is it going to rain)
+     = 0.6
+
+ - End   : 2023-08-24 17:00:14.329
+----------------------------------
+

@@ -1,0 +1,4 @@
+\ Test nonJSON Facts file
+SunShine = 0.8
+Wind : Wind measured at the top of the tower = 0.4
+Rain = -1.0

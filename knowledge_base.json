@@ -1,0 +1,53 @@
+{
+  "rulesBase" : {
+    "rules" : {
+      "RULE_1" : {
+        "name" : "RULE_1",
+        "description" : "If there is little sun, means there are clouds",
+        "fact" : {
+          "name" : "Clouds",
+          "description" : "",
+          "value" : 0.0
+        },
+        "formula" : {
+          "name" : "FORMULA_1",
+          "description" : " inverse proportional to sunshine ",
+          "body" : "! SunShine"
+        }
+      },
+      "RULE_2" : {
+        "name" : "RULE_2",
+        "description" : "More clouds mean probability of rain",
+        "fact" : {
+          "name" : "Rain",
+          "description" : " a bit less then clouds ",
+          "value" : 0.0
+        },
+        "formula" : {
+          "name" : "FORMULA_2",
+          "description" : " a bit less then clouds ",
+          "body" : "Clouds - 0.15"
+        }
+      }
+    }
+  },
+  "factsBase" : {
+    "facts" : {
+      "Rain" : {
+        "name" : "Rain",
+        "description" : "Is it going to rain",
+        "value" : -1.0
+      },
+      "Clouds" : {
+        "name" : "Clouds",
+        "description" : "There are clouds in the sky",
+        "value" : -1.0
+      },
+      "SunShine" : {
+        "name" : "SunShine",
+        "description" : "How much Sunshine there is today",
+        "value" : 0.25
+      }
+    }
+  }
+}
