@@ -1,4 +1,4 @@
 \ Test nonJSON Rules file
 Clouds : description # Clouds = ! SunShine
 Rain # Rain = Clouds - 0.15
-SunShine = 0.8
+SunShine = 0.4

@@ -81,11 +81,7 @@ public class RuleEngineTest
             String fileName = "./src/test/java/it/brunasti/engine/inferential/testRuleEngine.json";
             RuleEngineUtils.writeToJsonFile(ruleEngine,fileName);
             RuleEngine newEngine = RuleEngineUtils.readFromJsonFile(fileName);
-            System.out.println(ruleEngine);
-            System.out.println(newEngine);
-
             assertEquals(ruleEngine.toString(), newEngine.toString());
-
         } catch (IOException ioe) {
             ioe.printStackTrace();
             fail("Exception : "+ioe.getMessage());

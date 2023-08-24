@@ -64,42 +64,42 @@ public class MainTest
         Main.main(args);
     }
 
-    public void testMain_debug_query_A()
+    public void testMain_debug_query_Rain()
     {
         String[ ] args = {"Rain", "-d"};
 
         Main.main(args);
     }
 
-    public void testMain_debug_query_A_WITH_DUMP()
+    public void testMain_debug_query_Rain_WITH_DUMP()
     {
         String[ ] args = {"Rain", "-d", "-D", "dump_knowledge_base.json"};
 
         Main.main(args);
     }
 
-    public void testMain_debug_query_A_WITH_TRACE()
+    public void testMain_debug_query_Rain_WITH_TRACE()
     {
         String[ ] args = {"Rain", "-d", "-T", "trace.txt"};
 
         Main.main(args);
     }
 
-    public void testMain_debug_query_A_WITH_TRACE_from_subfiles()
+    public void testMain_debug_query_Rain_WITH_TRACE_from_subfiles()
     {
         String[ ] args = {"Rain", "-d", "-T", "trace.txt", "-r", "default_rules.json", "-f", "default_facts.json"};
 
         Main.main(args);
     }
 
-    public void testMain_query_from_subfiles()
+    public void testMain_query_Rain_from_subfiles()
     {
         String[ ] args = {"Rain", "-d", "-T", "trace.txt", "-x", "-r", "rules.kbr", "-f", "facts.kbf"};
 
         Main.main(args);
     }
 
-    public void testMain_debug_query_B()
+    public void testMain_debug_query_Clouds()
     {
         String[ ] args = {"Clouds", "-d"};
 

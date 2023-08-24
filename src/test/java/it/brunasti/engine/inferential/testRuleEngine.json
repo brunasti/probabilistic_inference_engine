@@ -7,7 +7,7 @@
         "fact" : {
           "name" : "C",
           "description" : "Fact C defined in rule RULE_2",
-          "value" : 0.0
+          "value" : -1.0
         },
         "formula" : {
           "name" : "FORMULA_3",
@@ -21,7 +21,7 @@
         "fact" : {
           "name" : "A",
           "description" : "Fact A defined in rule Rule1",
-          "value" : 0.0
+          "value" : -1.0
         },
         "formula" : {
           "name" : "FORMULA_1",
@@ -35,7 +35,7 @@
         "fact" : {
           "name" : "B",
           "description" : "Fact B defined in rule RULE_4",
-          "value" : 0.0
+          "value" : -1.0
         },
         "formula" : {
           "name" : "FORMULA_5",
@@ -50,17 +50,17 @@
       "A" : {
         "name" : "A",
         "description" : "Fact A defined in rule Rule1",
-        "value" : 0.0
+        "value" : -1.0
       },
       "B" : {
         "name" : "B",
         "description" : "Fact B defined in rule RULE_4",
-        "value" : 0.0
+        "value" : -1.0
       },
       "C" : {
         "name" : "C",
         "description" : "Fact C defined in rule RULE_2",
-        "value" : 0.0
+        "value" : -1.0
       }
     }
   }

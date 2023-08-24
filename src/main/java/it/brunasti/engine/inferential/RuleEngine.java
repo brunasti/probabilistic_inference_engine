@@ -38,8 +38,8 @@ public class RuleEngine implements Serializable {
         this.factsBase = knowledgeBase;
     }
 
-    public Fact registerFact(Fact fact) {
-        return factsBase.registerFact(fact);
+    public void registerFact(Fact fact) {
+        factsBase.registerFact(fact);
     }
 
     public Fact getFact(Fact fact) {

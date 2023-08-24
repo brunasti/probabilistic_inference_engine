@@ -24,7 +24,7 @@ public class RPNExecutor {
         } catch (NumberFormatException nfe) {
             Fact f = ruleEngine.getFact(element);
             if (f != null) {
-                System.out.println("        -- "+f.getValue());
+                System.out.println("        ---- "+f.getValue());
                 ruleEngine.trace("  -> pop : "+element);
                 ruleEngine.trace("  ---> : "+f.getValue());
                 return f.getValue();

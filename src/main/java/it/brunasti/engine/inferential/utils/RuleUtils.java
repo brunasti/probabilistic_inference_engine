@@ -42,7 +42,7 @@ public class RuleUtils implements Constants {
         String body = sFormula.substring(delimiter+1).trim();
         String nameFormula = Utils.createName("FORMULA");
 
-        fact = Fact.builder().name(sFact).description("Fact "+sFact+" defined in rule "+name).build();
+        fact = Fact.builder().name(sFact).description("Fact "+sFact+" defined in rule "+name).value(-1.0).build();
         formula = Formula.builder().name(nameFormula).body(body).description("Formula ["+sFormula+"] defined in rule "+name).build();
 
         return Rule.builder().name(name).description(description).fact(fact).formula(formula).build();

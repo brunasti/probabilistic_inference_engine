@@ -178,7 +178,7 @@ public class RPNExecutorTest
             RuleEngine ruleEngine = RuleEngineUtils.readFromJsonFile(fileName);
 
             double result = RPNExecutor.executeRPNStack(s, ruleEngine);
-            assertEquals(0.0, result);
+            assertEquals(-1.0, result);
         } catch (Exception ex) {
             ex.printStackTrace();
             fail( "Exception thrown : "+ex.getMessage());
