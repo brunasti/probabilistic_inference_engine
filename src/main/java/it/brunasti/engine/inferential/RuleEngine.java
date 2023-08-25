@@ -65,8 +65,6 @@ public class RuleEngine implements Serializable {
         if (debug) System.out.println("      Evaluate formula : "+formula+" ("+trace+")");
         if (debug) formula.dumpOut();
 
-//        if (trace) executeTracer.trace("  - "+formula.getBody());
-//
         double res = formula.execute(this);
         if (debug) System.out.println("      <- : "+res);
 
@@ -96,12 +94,13 @@ public class RuleEngine implements Serializable {
                         if (debug)
                             System.out.println("    =-> : update fact (" + getFact(rule.getFact()) + ") to " + res);
                         getFact(rule.getFact()).value = res;
-                        if (trace) executeTracer.trace("   "+rule.fact.getName()+" <- "+res);
-                        if (trace) executeTracer.trace("");
+                        if (trace) executeTracer.trace("   "+rule.fact.getName()+" <- "+res+"\n");
                         executed = executed + 1;
                     }
                 } catch (UnknownElementException uee) {
                     uee.printStackTrace();
+                    if (trace) executeTracer.trace(uee.getMessage()+"\n");
+
                 }
             }
         }
@@ -132,7 +131,8 @@ public class RuleEngine implements Serializable {
                     rulesBase.dump(),
                     "",
                     ExecutionTracer.ROW_SEPARATOR,
-                    "Query : "+query,
+                    "Query : ",
+                    "   "+query+" ?",
                     "",
                     " - Start : "+timestamp,
                     ExecutionTracer.ROW_SEPARATOR

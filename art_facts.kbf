@@ -1,0 +1,16 @@
+\ Test nonJSON Facts file for more extensive knowledge base - ART
+Colours=1.0
+Shapes=0.8
+Nature=0.5
+
+\ Types
+Renaissance=-1.0
+Mannerism=-1.0
+Baroque=-1.0
+Romanticism=-1.0
+Modernism=-1.0
+Impressionism=-1.0
+Abstract=-1.0
+Photorealism=-1.0
+Surrealism=-1.0
+Symbolism=-1.0

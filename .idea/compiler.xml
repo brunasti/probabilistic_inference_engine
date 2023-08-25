@@ -10,7 +10,7 @@
         <module name="probabilistic_inference_engine" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="19">
       <module name="probabilistic_inference_engine" target="19" />
     </bytecodeTargetLevel>
   </component>

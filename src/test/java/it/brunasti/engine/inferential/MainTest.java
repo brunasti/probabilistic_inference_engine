@@ -107,4 +107,12 @@ public class MainTest
     }
 
 
+    public void testMain_query_Art_Abstractism()
+    {
+        String[ ] args = {"Abstract", "-d", "-T", "trace.txt", "-x", "-r", "art_rules.kbr", "-f", "art_facts.kbf"};
+
+        Main.main(args);
+    }
+
+
 }
