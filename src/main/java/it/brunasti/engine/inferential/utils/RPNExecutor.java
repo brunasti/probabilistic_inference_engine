@@ -20,7 +20,13 @@ public class RPNExecutor {
 
         try {
             System.out.println("        -- "+element);
-            return Double.parseDouble(element);
+            double res = Double.parseDouble(element);
+            if (res > 1) {
+                res = 1;
+            } else if (res < 0) {
+                res = 0;
+            }
+            return res;
         } catch (NumberFormatException nfe) {
             Fact f = ruleEngine.getFact(element);
             if (f != null) {
