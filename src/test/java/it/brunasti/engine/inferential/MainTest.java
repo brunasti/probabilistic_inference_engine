@@ -114,5 +114,19 @@ public class MainTest
         Main.main(args);
     }
 
+    public void testMain_query_Art_Baroque()
+    {
+        String[ ] args = {"Baroque", "-d", "-T", "trace.txt", "-x", "-r", "art_rules.kbr", "-f", "art_facts.kbf"};
+
+        Main.main(args);
+    }
+
+    public void testMain_query_Art_Symbolism()
+    {
+        String[ ] args = {"Symbolism", "-d", "-T", "trace.txt", "-x", "-r", "art_rules.kbr", "-f", "art_facts.kbf"};
+
+        Main.main(args);
+    }
+
 
 }

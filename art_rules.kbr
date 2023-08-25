@@ -1,2 +1,4 @@
 \ Test nonJSON Rules file
 Abstract = ! Nature + ( Shapes - 0.3 ) + ( Colours - 0.4 )
+Baroque = ( Faces * 0.8 ) + ( Colours * 0.8 ) + ( Nature * 0.6 ) + Nudes
+Symbolism = ( Shapes ) * ( Colours - 0.4 )
