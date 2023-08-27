@@ -1,66 +1,36 @@
-Execution Trace : Baroque
+Execution Trace : Rain
 ----------------------------------
 
 Facts : 
-  Nature : 0.5
-  Photorealism : -1.0
-  Symbolism : -1.0
-  Abstract : -1.0
-  Impressionism : -1.0
-  Nudes : 0.3
-  Mannerism : -1.0
-  Renaissance : -1.0
-  Surrealism : -1.0
-  Colours : 1.0
-  Romanticism : -1.0
-  Shapes : 0.8
-  Faces : 0.2
-  Baroque : -1.0
-  Modernism : -1.0
+  Rain : -1.0
+  Clouds : -1.0
+  SunShine : 0.25
 
 Rules : 
-  RULE_1 : Abstract = ! Nature + ( Shapes - 0.3 ) + ( Colours - 0.4 )
-  RULE_5 : Symbolism = ( Shapes ) * ( Colours - 0.4 )
-  RULE_3 : Baroque = ( Faces * 0.8 ) + ( Colours * 0.8 ) + ( Nature * 0.6 ) + Nudes
+  RULE_1 : Clouds = ! SunShine
+  RULE_2 : Rain = Clouds - 0.15
 
 ----------------------------------
 Query : 
-   Baroque ?
+   Rain ?
 
- - Start : 2023-08-25 16:36:23.544
+ - Start : 2023-08-27 19:40:05.262
 ----------------------------------
-Rule RULE_1 ? Abstract = ! Nature + ( Shapes - 0.3 ) + ( Colours - 0.4 )
-  -> pop : Nature
-  ---> : 0.5
-  -> pop : Shapes
-  ---> : 0.8
-  -> pop : Colours
-  ---> : 1.0
-   Abstract <- 1.0
+Rule RULE_1 ? Clouds = ! SunShine
+  -> pop : SunShine
+  ---> : 0.25
+   Clouds <- 0.75
 
-Rule RULE_5 ? Symbolism = ( Shapes ) * ( Colours - 0.4 )
-  -> pop : Colours
-  ---> : 1.0
-  -> pop : Shapes
-  ---> : 0.8
-   Symbolism <- 0.48
-
-Rule RULE_3 ? Baroque = ( Faces * 0.8 ) + ( Colours * 0.8 ) + ( Nature * 0.6 ) + Nudes
-  -> pop : Faces
-  ---> : 0.2
-  -> pop : Colours
-  ---> : 1.0
-  -> pop : Nature
-  ---> : 0.5
-  -> pop : Nudes
-  ---> : 0.3
-   Baroque <- 1.0
+Rule RULE_2 ? Rain = Clouds - 0.15
+  -> pop : Clouds
+  ---> : 0.75
+   Rain <- 0.6
 
 ----------------------------------
 Result : 
-   Baroque (Baroque)
-     = 1.0
+   Rain (Is it going to rain)
+     = 0.6
 
- - End   : 2023-08-25 16:36:23.688
+ - End   : 2023-08-27 19:40:05.267
 ----------------------------------
 
